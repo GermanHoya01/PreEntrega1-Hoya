@@ -1,8 +1,14 @@
+
+import { Route, Routes } from "react-router-dom"
+
 const Main = () => {
+
     return (
-        <main className="main">
-            <h2>MAIN</h2>
-        </main>
+        <Routes>
+            <Route path="/" element={<Page2 />} />
+            <Route path="/categoria/:id" element={<Page2 />} />
+            <Route path="/carrito" element={<Page4 />} />
+        </Routes>
     )
 }
 
